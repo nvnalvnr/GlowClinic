@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Clinic - Produk</title>
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. CONTAINER NAVBAR -->
+    <div id="navbar-container"></div>
+
+    <!-- 2. HERO SECTION UNTUK PRODUK -->
+    <section class="hero" style="height: 50vh;">
+        <div class="hero-content">
+            <h1><i class="fas fa-shopping-bag"></i> Produk Skincare</h1>
+            <p>Produk berkualitas untuk perawatan kulit sehari-hari.</p>
+            <a href="contact.html" class="btn-primary">
+                <i class="fas fa-comments"></i> Tanya Produk
+            </a>
+        </div>
+    </section>
+
+    <!-- 3. SECTION PRODUK LENGKAP -->
+    <section id="produk" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">Semua Produk Kami</h2>
+            <div class="grid-produk">
+                <!-- Produk 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&auto=format&fit=crop" alt="Serum">
+                    <h3><i class="fas fa-tint"></i> Vitamin C Serum</h3>
+                    <p class="desc">Mencerahkan dalam 7 hari.</p>
+                    <div class="price-row">
+                        <span class="price">Rp 150.000</span>
+                        <button class="btn-buy" onclick="beliProduk('Vitamin C Serum')">
+                            <i class="fas fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+                <!-- Produk 2 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1556228578-8d89f5a7a5a6?w=200&auto=format&fit=crop" alt="Sunscreen">
+                    <h3><i class="fas fa-shield-alt"></i> SPF 50 Sunscreen</h3>
+                    <p class="desc">Proteksi maksimal dari sinar UV.</p>
+                    <div class="price-row">
+                        <span class="price">Rp 120.000</span>
+                        <button class="btn-buy" onclick="beliProduk('SPF 50 Sunscreen')">
+                            <i class="fas fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+                <!-- Produk 3 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?w=200&auto=format&fit=crop" alt="Moisturizer">
+                    <h3><i class="fas fa-tint"></i> Hydrating Moisturizer</h3>
+                    <p class="desc">Melembabkan kulit sepanjang hari.</p>
+                    <div class="price-row">
+                        <span class="price">Rp 180.000</span>
+                        <button class="btn-buy" onclick="beliProduk('Hydrating Moisturizer')">
+                            <i class="fas fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+                <!-- Produk 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?w=200&auto=format&fit=crop" alt="Cleanser">
+                    <h3><i class="fas fa-pump-soap"></i> Gentle Face Cleanser</h3>
+                    <p class="desc">Pembersih wajah lembut untuk semua jenis kulit.</p>
+                    <div class="price-row">
+                        <span class="price">Rp 95.000</span>
+                        <button class="btn-buy" onclick="beliProduk('Gentle Face Cleanser')">
+                            <i class="fas fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FOOTER -->
+    <footer>
+        <p>&copy; 2023 Glow Clinic. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
