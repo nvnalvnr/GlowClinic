@@ -496,3 +496,10 @@ WHY US CARD (MODERN)
   height: 4px;
   background: var(--gradient);
 }
+
+/* REMOVE UNDERLINE FROM LINKS IN TREATMENT POST */
+.card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
