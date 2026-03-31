@@ -26,7 +26,7 @@
       <div class="hero-content">
         <span class="hero-tagline">Glow Beauty & Skin Care Clinic</span>
 
-        <h1><i class="fas fa-spa"></i> Wujudkan Kulit Sehat & Bersinar</h1>
+        <h1>Wujudkan Kulit Sehat dan Bersinar</h1>
 
         <p>
           Perawatan kulit profesional dengan teknologi modern dan dokter
@@ -40,7 +40,7 @@
         </p>
 
         <a href="treatment.html" class="btn-primary">
-          <i class="fas fa-arrow-right"></i> Jelajahi Treatment Kami
+          Jelajahi Treatment Kami
         </a>
       </div>
     </section>
@@ -91,12 +91,13 @@
     </section>
 
     <!-- BUAT KOLOM TESTIMONI GLOW CLINIC -->
-    <section class="section-padding bg bg-light">
+    <section class="section-padding bg-light">
       <div class="container">
         <h2 class="section-title">Testimoni Pelanggan</h2>
-        <div class="testimonial-container">
+
+        <!-- SLIDER -->
+        <div class="testimonial-slider" id="testimonialSlider">
           <div class="testimonial-card">
-            <!-- / Tempat buat kasih tampilan bintang -->
             <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -104,15 +105,14 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-
             <p>
               "Treatment facial di Glow Clinic sangat nyaman dan hasilnya
-              membuat kuliat saya terlihat lebih cerah."
+              membuat kulit saya lebih cerah."
             </p>
-            <h4>-Bunga-</h4>
+            <h4>- Bunga -</h4>
           </div>
+
           <div class="testimonial-card">
-            <!-- / Tempat buat kasih tampilan bintang -->
             <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -124,10 +124,10 @@
               "Dokternya sangat ramah dan menjelaskan kondisi kulit saya dengan
               jelas."
             </p>
-            <h4>-Salsabilla-</h4>
+            <h4>- Salsabilla -</h4>
           </div>
+
           <div class="testimonial-card">
-            <!-- / Tempat buat kasih tampilan bintang -->
             <div class="stars">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -138,11 +138,90 @@
             <p>
               "Produk skincare dari Glow Clinic sangat cocok untuk kulit saya."
             </p>
-            <h4>-alicia key-</h4>
+            <h4>- Alicia -</h4>
           </div>
+
+          <!-- tambahan biar bisa scroll -->
+          <div class="testimonial-card">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>"Pelayanan sangat profesional dan tempatnya nyaman."</p>
+            <h4>- Dinda -</h4>
+          </div>
+        </div>
+
+        <!-- BUTTON BAWAH -->
+        <div class="slider-controls">
+          <button id="prevTesti"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextTesti"><i class="fas fa-arrow-right"></i></button>
         </div>
       </div>
     </section>
+
+    <!-- SECTION BARU BUAT DOKTER -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title">Dokter Terpercaya</h2>
+
+        <!-- SLIDER -->
+        <div class="doctor-slider" id="doctorSlider">
+          <!-- CARD -->
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600"
+            />
+            <h3>Dr. Sarah Wijaya</h3>
+            <p>Dermatologist - Spesialis kulit</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600"
+            />
+            <h3>Dr. Andi Pratama</h3>
+            <p>Skin Specialist</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600"
+            />
+            <h3>Dr. Maya Putri</h3>
+            <p>Dermatologist</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600"
+            />
+            <h3>Dr. Kevin Hartono</h3>
+            <p>Skin Care Expert</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600"
+            />
+            <h3>Dr. Lina Sari</h3>
+            <p>Dermatology Specialist</p>
+          </div>
+        </div>
+
+        <!-- BUTTON DI BAWAH -->
+        <div class="slider-controls">
+          <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+    <!-- END OF SECTION DOKTER -->
+
+    <!-- mau dipindahin di halaman about -->
     <!--7. Buat FORM KOMENTAR  -->
     <section class="section-padding">
       <div class="container">
@@ -175,5 +254,7 @@
 
     <!-- JavaScript -->
     <script src="/js/navbar.js"></script>
+    <script src="/js/doctor-slider.js"></script>
+    <script src="/js/testimoni-slider.js"></script>
   </body>
 </html>

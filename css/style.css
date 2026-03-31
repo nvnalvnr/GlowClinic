@@ -340,6 +340,43 @@ header .container {
   font-size: 18px;
 }
 
+/* SLIDER TESTIMONI */
+.testimonial-slider {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/* CARD */
+.testimonial-card {
+  min-width: calc(100% / 3 - 20px);
+  background: var(--white);
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+/* STAR */
+.stars {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+/* BUTTON reuse */
+.slider-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
 /* ============================================
 9. FORM
 ============================================ */
@@ -502,4 +539,60 @@ WHY US CARD (MODERN)
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+/* DOCTOR ON INDEX.HTML OR HOME */
+/* SLIDER */
+.doctor-slider {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+/* CARD */
+.doctor-card {
+  min-width: calc(100% / 3 - 20px);
+  background: var(--white);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+
+.doctor-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 10px;
+}
+
+.doctor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* BUTTON DI BAWAH */
+.slider-controls {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.slider-controls button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  background: var(--white);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.slider-controls button:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
 }
