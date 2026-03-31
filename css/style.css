@@ -441,3 +441,108 @@ font-size:2rem;
 }
 
 }
+
+/* WHY US CARD  */
+
+.why-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.why-card{
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.why-card:hover{
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+
+}
+
+/* ICON  */
+.why-card i {
+    font-size: 40px;
+    color: var(--primary);
+    margin-bottom: 15px;
+
+}
+
+/* TITLE */
+.why-card h3 {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+/* TEXT  */
+.why-card p{
+    color: var(--text);
+    font-size: 0,95rem;
+}
+
+/* TOP LINE EFFECT */
+.why-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient);
+}
+
+/* ============================================
+DOCTOR DETAIL (UPGRADE)
+============================================ */
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.doctor-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* FOTO */
+.doctor-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #f5d5d5;
+}
+
+/* NAMA */
+.doctor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+/* SPESIALIS */
+.spesialis {
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 10px
