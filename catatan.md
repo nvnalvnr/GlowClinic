@@ -1,5 +1,6 @@
 # Glow Clinic Website
 
+
 alasan aku buat website ini karena aku tertarik sama dunia Per Skincarean karena menurut aku ketika kita merawat badan kita itu bentuk tanda self love tersendiri, Website ini sendiri terinspirasi dari sozo clinic dan erha.
 ## Fitur Fitur pada Website ini
 - Halaman Beranda :
@@ -18,4 +19,23 @@ alasan aku buat website ini karena aku tertarik sama dunia Per Skincarean karena
     1. untuk halaman kontak ada lokasi google maps ada akun sosmed yang bisa diklik  kemudian nanti diarahin ke halaman link sosmednya.
     2. aku mau nambahin cabang cabangnya
   
+TULIS TESTIMONI : DITARO DI PROFIL KAMI
 
+
+👉 card.js = pintu masuk
+👉 detail.js = isi ruangan
+
+
+UBAH UNDERLINE DI HALAMAN PRODUCT DAN TAMBAHIN BREADCURUMB DI DETAIL PRODUK
+BIKIN FOOTER YANG KAYA ERHAA 
+
+BERANDA : TESTIMONI DIKASIH FOTO PELANGGANYA, 
+FOOTERNYA DIPERBAIKIN WARNANYA DIGANTI LEBIH GELAP LAGI 
+TREATMENT DAN PRODUK DITAMBAHKAN KOLOM UNTUK SEARCH
+PROFIL : UNTUK BAGIAN VISI DAN MISI DIPERBAIKI TAMPILANNYA
+        UNTUK GMAPS NYA DIGABUNG DENGAN LOKASI KAMI DAN IKUTI KAMI DIJADIKAN
+        BERSEBELAHAN 
+    
+
+### LINK WEBSITE 
+https://glow-clinic-sandy.vercel.app/

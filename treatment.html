@@ -11,8 +11,11 @@
     />
     <!-- CSS Utama -->
     <link rel="stylesheet" href="css/style.css" />
-    <!-- FONT -->
-     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONT AESTHETIC -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- 1. CONTAINER NAVBAR -->
@@ -36,7 +39,11 @@
         <div class="grid-treatment">
           <!-- SEMUA TREATMENT WITH KATEGORI -->
           <!-- ===================== FACIAL ===================== -->
-          <div class="card" data-category="facial">
+          <a
+            href="treatment-detail.html?id=hydrafacial"
+            class="card"
+            data-category="facial"
+          >
             <img
               src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600"
             />
@@ -45,11 +52,16 @@
               <p>Deep cleansing dan hidrasi intens untuk kulit sehat.</p>
               <span class="price">Rp 350.000</span>
             </div>
-          </div>
-
+          </a>
+          
+        <a
+            href="treatment-detail.html?id=brighteningfacial"
+            class="card"
+            data-category="facial"
+          >
           <div class="card" data-category="facial">
             <img
-              src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600"
+              src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=550"
             />
             <div class="card-content">
               <h3><i class="fas fa-leaf"></i> Brightening Facial</h3>
@@ -57,10 +69,16 @@
               <span class="price">Rp 300.000</span>
             </div>
           </div>
+        </a>
 
+          <a
+            href="treatment-detail.html?id=acnefacial"
+            class="card"
+            data-category="facial"
+          >
           <div class="card" data-category="facial">
             <img
-              src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=600"
+              src="https://images.unsplash.com/photo-1647004692483-c5d942fe1137?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
             <div class="card-content">
               <h3><i class="fas fa-smile"></i> Acne Facial</h3>
@@ -68,11 +86,17 @@
               <span class="price">Rp 320.000</span>
             </div>
           </div>
+          </a>
 
           <!-- ===================== PEELING ===================== -->
+          <a
+            href="treatment-detail.html?id=chemicalpeeling"
+            class="card"
+            data-category="peeling"
+          >
           <div class="card" data-category="peeling">
             <img
-              src="https://images.unsplash.com/photo-1737215398544-94db22a53a01?w=600"
+              src="https://media.istockphoto.com/id/2172793507/photo/close-up-of-a-cosmetologist-applying-a-cosmetic-peeling-mask-to-a-clients-face-the-scene.webp?a=1&b=1&s=612x612&w=0&k=20&c=tSYoCdPaQfAVGQkQpSiFalcrmtGhTtIGWLX9VEfd2W4="
             />
             <div class="card-content">
               <h3><i class="fas fa-magic"></i> Chemical Peeling</h3>
@@ -80,6 +104,7 @@
               <span class="price">Rp 250.000</span>
             </div>
           </div>
+          </a>
 
           <div class="card" data-category="peeling">
             <img
@@ -104,7 +129,13 @@
           </div>
 
           <!-- ===================== LASER ===================== -->
+           <a
+            href="treatment-detail.html?id=laser1"
+            class="card"
+            data-category="laser"
+          >
           <div class="card" data-category="laser">
+             
             <img
               src="https://plus.unsplash.com/premium_photo-1663039841668-5638c2938153?w=600"
             />
@@ -114,6 +145,7 @@
               <span class="price">Rp 500.000</span>
             </div>
           </div>
+        </a>
 
           <div class="card" data-category="laser">
             <img
@@ -182,6 +214,6 @@
     <!-- JavaScript -->
     <script src="/js/navbar.js"></script>
     <script src="/js/filter-treatment.js"></script>
-    <script src="js/card.js"></script>
+    <script src="js/footer.js"></script>
   </body>
 </html>

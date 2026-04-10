@@ -1,0 +1,49 @@
+/* ============================================
+DOCTOR DETAIL (UPGRADE)
+============================================ */
+
+.doctor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 30px;
+}
+
+.doctor-card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* FOTO */
+.doctor-card img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 4px solid #f5d5d5;
+}
+
+/* NAMA */
+.doctor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: var(--dark);
+}
+
+/* SPESIALIS */
+.spesialis {
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 10px
+}
