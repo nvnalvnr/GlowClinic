@@ -35,24 +35,39 @@
     <!-- 3. SECTION PRODUK LENGKAP -->
     <section id="produk" class="section-padding">
       <div class="container">
-         <div class="breadcrumb">
-      <a href="index.html">Beranda</a> /
-      <span>Produk</span>
-    </div>
+        <div class="breadcrumb">
+          <a href="index.html">Beranda</a> /
+          <span>Produk</span>
+        </div>
 
         <h2 class="section-title">Semua Produk Kami</h2>
+        <!-- SEARCH -->
+<div style="text-align:center; margin-bottom:30px;">
+  <input 
+    type="text" 
+    id="searchProduk" 
+    placeholder="Cari produk..." 
+    style="
+      width: 60%;
+      padding: 12px 20px;
+      border-radius: 30px;
+      border: 1px solid #ddd;
+      outline: none;
+    "
+  >
+</div>
+
         <div class="grid-produk">
           <!-- Produk 1 -->
 
           <a
             href="produk-detail.html?id=vitamin-c"
             class="product-card"
-            data-category="acne"
-          >
-            <img
-              src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=200&auto=format&fit=crop"
+            data-category="acne"to=format&fit=crop"
               alt="Serum"
             />
+          >
+            <img src="https://i.pinimg.com/736x/4a/59/38/4a5938258367d055ee58a0bdacf04108.jpg" alt="serum">
             <h3><i class="fas fa-tint"></i> Vitamin C Serum</h3>
             <p class="desc">Mencerahkan dalam 7 hari.</p>
             <div class="price-row">
@@ -69,7 +84,7 @@
             data-category="acne"
           >
             <img
-              src="https://images.unsplash.com/photo-1556228578-8d89f5a7a5a6?w=200&auto=format&fit=crop"
+              src="https://i.pinimg.com/736x/36/22/cc/3622cc7b8787e26978e5cb7a44425ae4.jpg"
               alt="Sunscreen"
             />
             <h3><i class="fas fa-shield-alt"></i> SPF 50 Sunscreen</h3>
@@ -85,7 +100,7 @@
           <!-- Produk 3 -->
           <div class="product-card" data-category="whitening">
             <img
-              src="https://images.unsplash.com/photo-1608248597279-f99d160bfbc8?w=200&auto=format&fit=crop"
+              src="https://i.pinimg.com/736x/59/85/18/59851812292ca25622b68e3522df042c.jpg"
               alt="Moisturizer"
             />
             <h3><i class="fas fa-tint"></i> Hydrating Moisturizer</h3>
@@ -103,7 +118,7 @@
           <!-- Produk 4 -->
           <div class="product-card" data-category="whitening">
             <img
-              src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?w=200&auto=format&fit=crop"
+              src="https://i.pinimg.com/736x/bd/22/20/bd2220e12b918681fe5ccb84727995f5.jpg"
               alt="Cleanser"
             />
             <h3><i class="fas fa-pump-soap"></i> Gentle Face Cleanser</h3>
@@ -123,13 +138,29 @@
     </section>
 
     <!-- 4. FOOTER -->
-    <footer>
-      <p>&copy; 2023 Glow Clinic. All Rights Reserved.</p>
-    </footer>
 
     <!-- JavaScript -->
     <script src="js/navbar.js"></script>
     <script src="js/produk-filtering.js"></script>
     <script src="js/footer.js"></script>
+    <script>
+const searchProduk = document.getElementById("searchProduk");
+const produkCards = document.querySelectorAll(".grid-produk .product-card");
+
+searchProduk.addEventListener("keyup", function () {
+  const keyword = this.value.toLowerCase();
+
+  produkCards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+
+    if (text.includes(keyword)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
+
   </body>
 </html>

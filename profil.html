@@ -3,70 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Clinic - Kontak</title>
-    <!-- Font Awesome untuk Ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- CSS Utama -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
+    <title>Glow Clinic - Profil</title>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-    <!-- 1. CONTAINER NAVBAR -->
-    <div id="navbar-container"></div>
-    
+<!-- NAVBAR -->
+<div id="navbar-container"></div>
 
-    <!-- 2. HERO SECTION UNTUK KONTAK -->
-    <section class="hero" style="height: 50vh;">
-        <div class="hero-content">
-            <h1><i class="fas fa-user-md"></i> Kontak Kami</h1>
-            <p>Hubungi Kami</p>
-        </div>
-    </section>
+<!-- HERO -->
+<section class="hero" style="height:50vh;">
+    <div class="hero-content">
+        <h1>Glow Clinic</h1>
+        <p>Professional Skin Care & Beauty Treatment</p>
+    </div>
+</section>
 
-    <!-- PROFIL KLINIK -->
+<!-- =========================
+ABOUT (STORYTELLING)
+========================= -->
 <section class="section-padding">
-  <div class="container">
-    <h2 class="section-title">Tentang Glow Clinic</h2>
+  <div class="container profile-flex">
 
-    <div class="about-clinic">
-      <p>
-        Glow Clinic adalah klinik kecantikan modern yang berfokus pada perawatan kulit
-        dengan teknologi terkini dan tenaga profesional. Kami hadir untuk membantu
-        setiap pelanggan mendapatkan kulit sehat, cerah, dan percaya diri.
-      </p>
+    <!-- GAMBAR KIRI -->
+    <div class="profile-image">
+      <img src="https://i.pinimg.com/736x/8a/ab/44/8aab448c68627a57c193caa4562b4550.jpg" alt="Glow Clinic">
     </div>
 
-    <div class="profile-grid">
+    <!-- KONTEN KANAN -->
+    <div class="profile-content">
 
-      <!-- VISI -->
-      <div class="profile-card">
-        <h3>Visi</h3>
+      <!-- TAB BUTTON -->
+      <div class="profile-tabs">
+        <button class="tab-btn active" onclick="showTab('mission')">Our Mission</button>
+        <button class="tab-btn" onclick="showTab('vision')">Our Vision</button>
+        <button class="tab-btn" onclick="showTab('story')">Our Story</button>
+      </div>
+
+      <!-- MISSION -->
+      <div class="tab-content active" id="mission">
         <p>
-          Menjadi klinik kecantikan terpercaya dengan pelayanan terbaik dan hasil maksimal
-          untuk setiap pelanggan.
+          Glow Clinic hadir dengan misi untuk memberikan solusi perawatan kulit terbaik
+          yang aman, efektif, dan berbasis teknologi modern. Kami berkomitmen untuk membantu
+          setiap pelanggan mendapatkan kulit sehat, cerah, dan terawat melalui layanan yang
+          profesional dan personal.
+        </p>
+
+        <p>
+          Dengan dukungan dokter berpengalaman serta penggunaan alat dan produk berkualitas,
+          kami memastikan setiap treatment dilakukan dengan standar medis yang tinggi demi
+          hasil yang optimal dan kepuasan pelanggan.
+        </p>
+
+      
+      </div>
+
+      <!-- VISION -->
+      <div class="tab-content" id="vision">
+        <p>
+          Menjadi klinik kecantikan terpercaya yang dikenal secara luas dalam memberikan
+          layanan perawatan kulit terbaik dengan hasil nyata dan berkelanjutan.
+        </p>
+
+        <p>
+          Kami bercita-cita menjadi pusat perawatan kulit modern yang tidak hanya fokus
+          pada kecantikan luar, tetapi juga kesehatan kulit jangka panjang bagi setiap
+          pelanggan kami.
         </p>
       </div>
 
-      <!-- MISI -->
-      <div class="profile-card">
-        <h3>Misi</h3>
-        <ul>
-          <li>Memberikan pelayanan profesional dan ramah</li>
-          <li>Menggunakan teknologi modern dan aman</li>
-          <li>Meningkatkan kualitas perawatan kulit</li>
-          <li>Mengutamakan kepuasan pelanggan</li>
-        </ul>
-      </div>
-
-      <!-- SEJARAH -->
-      <div class="profile-card">
-        <h3>Sejarah</h3>
+      <!-- STORY -->
+      <div class="tab-content" id="story">
         <p>
-          Glow Clinic didirikan pada tahun 2025 dengan tujuan memberikan solusi
-          kecantikan yang aman dan terpercaya. Berawal dari klinik kecil, kini
-          berkembang menjadi klinik modern dengan berbagai layanan unggulan.
+          Glow Clinic didirikan dengan tujuan sederhana: membantu setiap orang merasa
+          lebih percaya diri dengan kulit mereka. Berawal dari klinik kecil, kini kami
+          berkembang menjadi tempat perawatan kulit yang dipercaya oleh ratusan pelanggan.
+        </p>
+
+        <p>
+          Dengan pengalaman bertahun-tahun di bidang dermatologi dan kecantikan, kami terus
+          berinovasi menghadirkan layanan terbaik serta mengikuti perkembangan teknologi
+          terbaru di dunia skincare.
         </p>
       </div>
 
@@ -75,119 +102,91 @@
 </section>
 
 
-    <!-- KONTAK -->
-<section class="section-padding">
-    <div class="container">
-        <h2 class="section-title">Informasi Kontak</h2>
+<!-- lokasi dan info profil -->
+<section class="section-padding bg-light">
+  <div class="container contact-flex">
 
-        <div class="contact-info">
+    <!-- KIRI: GOOGLE MAP -->
+    <div class="map-box">
 
-            <!-- ALAMAT -->
-            <div class="contact-item">
-                <i class="fas fa-map-marker-alt"></i>
-                <h3>Alamat Klinik</h3>
-                <p>Jl. Kecantikan No. 12, Bekasi</p>
-            </div>
 
-            <!-- TELEPON -->
-            <div class="contact-item">
-                <i class="fas fa-phone"></i>
-                <h3>Telepon</h3>
-                <p>0812-3456-7890</p>
-            </div>
-
-            <!-- EMAIL -->
-            <div class="contact-item">
-                <i class="fas fa-envelope"></i>
-                <h3>Email</h3>
-                <p>glowclinic@gmail.com</p>
-            </div>
-
-        </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=bekasi&output=embed"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy">
+        </iframe>
+      </div>
     </div>
+
+    <!-- KANAN: KONTAK + SOSIAL -->
+    <div class="social-box">
+
+      <div class="contact-card">
+      <!-- INFO KONTAK -->
+        <div class="contact-list">
+          <p><i class="fas fa-map-marker-alt"></i> Bekasi, Indonesia</p>
+          <p><i class="fas fa-envelope"></i> glowclinic@gmail.com</p>
+          <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+        </div>
+
+        <!-- GARIS -->
+        <hr>
+        <p>Ikuti Kami</p>
+        <div class="social-icons-clean">
+          <a href="https://wa.me/6281315099780" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://tiktok.com/@namasayavani" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://instagram.com/nvnalvnr" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
-<!-- GOOGLE MAPS -->
-<section class="section-padding">
-    <div class="container">
-        <h2 class="section-title">Lokasi Kami</h2>
-
-        <div class="map-container">
-            <iframe 
-                src="https://www.google.com/maps?q=bekasi&output=embed"
-                width="100%" 
-                height="350" 
-                style="border:0;" 
-                loading="lazy">
-            </iframe>
-        </div>
-    </div>
-</section>
-
-<!-- SOSIAL MEDIA -->
-<section class="section-padding">
-    <div class="container">
-        <h2 class="section-title">Ikuti Kami</h2>
-
-        <div class="social-media">
-
-    <a href="https://instagram.com/nvnalvnr" target="_blank" class="social-btn">
-        <i class="fab fa-instagram"></i> Instagram
-    </a>
-
-    <a href="https://wa.me/6281315099780?text=Halo%20Glow%20Clinic,%20saya%20ingin%20konsultasi" target="_blank" class="social-btn wa">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
-
-    <a href="https://www.tiktok.com/@nvnalfnr" target="_blank" class="social-btn">
-        <i class="fab fa-tiktok"></i> TikTok
-    </a>
-
-        </div>
-    </div>
-</section>
-
-<!-- TOMBOL WHATSAPP MELAYANG -->
-    <a href="https://wa.me/6281315099780" class="wa-float" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-<!-- GALERI KLINIK -->
-<section class="section-padding">
+<!-- GALERI -->
+ <section class="section-padding bg-light">
   <div class="container">
     <h2 class="section-title">Galeri Klinik</h2>
 
-    <div class="gallery-slider">
+    <!-- SLIDER -->
+    <div class="gallery-slider" id="gallerySlider">
 
-      <img src="https://media.istockphoto.com/id/2179255792/photo/lpg-machine-in-a-spa.webp?a=1&b=1&s=612x612&w=0&k=20&c=Bnik14E9plAb-xBPZmrEvYqqVveCPGfZiY-vFaoVrCc=" onclick="openModal(this.src)">
-      
-      <img src="https://plus.unsplash.com/premium_photo-1664187387330-d09bb508b791?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xpbmljJTIwYmVhdXR5fGVufDB8fDB8fHww" onclick="openModal(this.src)">
-      
-      <img src="https://media.istockphoto.com/id/1471734160/photo/beautician-extracting-pimples-from-a-womans-face.webp?a=1&b=1&s=612x612&w=0&k=20&c=a_-TL7anBRtgC9xgqVBc0h-ads6sMPhlcO8MKJtucr8=" onclick="openModal(this.src)">
-      
-      <img src="https://plus.unsplash.com/premium_photo-1663013526978-219d457162f0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGNsaW5pYyUyMGJlYXV0eXxlbnwwfHwwfHx8MA%3D%3D" onclick="openModal(this.src)">
-      
-      <img src="https://plus.unsplash.com/premium_photo-1664298911734-80d401a7431c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGNsaW5pYyUyMGJlYXV0eXxlbnwwfHwwfHx8MA%3D%3D" onclick="openModal(this.src)">
-      
-      <img src="https://plus.unsplash.com/premium_photo-1661369749786-0ae29b60e823?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fGNsaW5pYyUyMGJlYXV0eXxlbnwwfHwwfHx8MA%3D%3D" onclick="openModal(this.src)">
-    
-     <img src="https://plus.unsplash.com/premium_photo-1661576588866-636e69ecfce0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTJ8fGNsaW5pYyUyMGJlYXV0eXxlbnwwfHwwfHx8MA%3D%3D" onclick="openModal(this.src)">
-    
-     <img src="https://media.istockphoto.com/id/2234575712/photo/spa-interior-with-towels-lanterns-and-natural-light.webp?a=1&b=1&s=612x612&w=0&k=20&c=lGETfoXB1p2fAMxdRo2ktcXAYHtzkHESW9brd61hUDs=" onclick="openModal(this.src)">
+      <img src="https://i.pinimg.com/736x/50/c2/b7/50c2b77b855dffb5aa21b49221d6f8e5.jpg">
+      <img src="https://i.pinimg.com/1200x/5e/53/71/5e53712d0a1f0150d7f92c1a1a462bce.jpg">
+      <img src="https://i.pinimg.com/1200x/54/77/0a/54770a11f1654d99cd069106cfc8d28c.jpg">
+      <img src="https://i.pinimg.com/1200x/4b/69/09/4b6909891a03b8e86e6c9607663ca51a.jpg">
+      <img src="https://i.pinimg.com/1200x/58/e1/84/58e184d168a0189bc22d0ab76275e8ca.jpg">
+      <img src="https://i.pinimg.com/736x/f6/42/c9/f642c9d8b2b1c308d260970e3b201ff9.jpg">
     </div>
+
+    <!-- BUTTON -->
+    <div class="slider-controls">
+      <button id="prevGallery"><i class="fas fa-arrow-left"></i></button>
+      <button id="nextGallery"><i class="fas fa-arrow-right"></i></button>
+    </div>
+
   </div>
 </section>
 
-<!-- MODAL (POPUP GAMBAR) -->
+
+<!-- MODAL -->
 <div id="imageModal" class="modal" onclick="closeModal()">
   <span class="close">&times;</span>
   <img class="modal-content" id="modalImg">
 </div>
 
-
-<!-- TESTIMONI -->
-<section class="section-padding">
+<!-- =========================
+TESTIMONI
+========================= -->
+<!-- <section class="section-padding">
   <div class="container">
+
     <h2 class="section-title">Tulis Testimoni</h2>
 
     <div class="form-container">
@@ -195,34 +194,68 @@
 
         <div class="form-group">
           <label>Nama</label>
-          <input type="text" placeholder="Masukkan nama anda" />
+          <input type="text" placeholder="Masukkan nama">
         </div>
 
         <div class="form-group">
           <label>Komentar</label>
-          <textarea rows="4" placeholder="Tulis pengalaman anda"></textarea>
+          <textarea rows="4" placeholder="Tulis pengalaman"></textarea>
         </div>
 
-        <button class="btn-primary">Kirim Testimoni</button>
+        <button class="btn-primary">Kirim</button>
 
       </form>
     </div>
 
- </div>
-</section>
+  </div>
+</section> -->
 
-<script src="/js/navbar.js"></script>
+<!-- WA FLOAT -->
+<a href="#" class="wa-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- JS -->
+<script src="js/navbar.js"></script>
 <script src="js/footer.js"></script>
 
+
 <script>
-function openModal(src) {
-    document.getElementById("imageModal").style.display = "block";
-    document.getElementById("modalImg").src = src;
+function openModal(src){
+  document.getElementById("imageModal").style.display="block";
+  document.getElementById("modalImg").src=src;
 }
 
-function closeModal() {
-    document.getElementById("imageModal").style.display = "none";
+function closeModal(){
+  document.getElementById("imageModal").style.display="none";
 }
+</script>
+<script>
+function showTab(tabId){
+  const tabs = document.querySelectorAll('.tab-content');
+  const buttons = document.querySelectorAll('.tab-btn');
+
+  tabs.forEach(tab => tab.classList.remove('active'));
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  document.getElementById(tabId).classList.add('active');
+  event.target.classList.add('active');
+}
+</script>
+
+<!-- JS UNTUK GALERI  -->
+ <script>
+const gallery = document.getElementById("gallerySlider");
+const nextGallery = document.getElementById("nextGallery");
+const prevGallery = document.getElementById("prevGallery");
+
+nextGallery.addEventListener("click", () => {
+  gallery.scrollBy({ left: 300, behavior: "smooth" });
+});
+
+prevGallery.addEventListener("click", () => {
+  gallery.scrollBy({ left: -300, behavior: "smooth" });
+});
 </script>
 
 </body>

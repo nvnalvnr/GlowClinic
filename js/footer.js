@@ -7,7 +7,7 @@ const footer = `
       <p class="tagline">Healthy Skin, Happy Life ✨</p>
 
       <div class="footer-info">
-        <p><i class="fas fa-map-marker-alt"></i> Sukarame, Indonesia</p>
+        <p><i class="fas fa-map-marker-alt"></i> Bekasi, Indonesia</p>
         <p><i class="fas fa-envelope"></i> glowclinic@gmail.com</p>
         <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
       </div>

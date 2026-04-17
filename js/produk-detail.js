@@ -3,7 +3,7 @@ const products = {
     title: "Vitamin C Serum",
     description: "Serum pencerah yang membantu meratakan warna kulit.",
     price: "Rp 150.000",
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600",
+    image: "https://i.pinimg.com/736x/4a/59/38/4a5938258367d055ee58a0bdacf04108.jpg",
   },
   sunscreen: {
     title: "SPF 50 Sunscreen",
