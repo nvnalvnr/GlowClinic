@@ -121,60 +121,67 @@ border-radius:3px;
 /* ============================================
 4. HERO SECTION
 ============================================ */
+.hero-full {
+  position: relative;
+  height: 100vh;
 
-.hero{
-background:
-linear-gradient(rgba(44,44,44,0.8),rgba(44,44,44,0.6)),
-url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1920');
-background-size:cover;
-background-position:center;
-min-height:80vh;
+  /* GAMBAR KAMU */
+  background: url('https://i.pinimg.com/1200x/0a/00/ae/0a00aeeb7edf7805478770b0df088bd3.jpg') center/cover no-repeat;
 
-display:flex;
-align-items:center;
-justify-content:center;
-
-text-align:center;
-color:white;
+  display: flex;
+  align-items: flex-end;
+  padding: 80px;
+  color: white;
 }
 
-.hero-content{
-max-width:800px;
-padding:20px;
+/* OVERLAY COKLAT */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(44, 30, 25, 0.8),   /* COKLAT GELAP */
+    rgba(44, 30, 25, 0.3)
+  );
 }
 
-/* HERO TAGLINE */
-
-.hero-tagline{
-display:inline-block;
-background:rgba(255,255,255,0.15);
-padding:8px 18px;
-border-radius:20px;
-font-size:14px;
-margin-bottom:15px;
-backdrop-filter:blur(4px);
+/* TEXT */
+.hero-content-full {
+  position: relative;
+  z-index: 2;
 }
 
-/* HERO TITLE */
-
-.hero-content h1{
-font-family:'Playfair Display', serif;
-font-size:3.5rem;
-margin-bottom:20px;
-letter-spacing:1px;
+.hero-small {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
 }
 
-/* HERO TEXT */
-
-.hero-content p{
-font-size:1.2rem;
-margin-bottom:20px;
+.hero-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: white;
+  border-bottom: 1px solid white;
 }
 
-.hero-sub{
-opacity:0.9;
+.hero-big {
+  font-family: 'Playfair Display', serif;
+  font-size: 80px;
 }
 
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background: transparent !important; /* PAKSA TRANSPARAN */
+  box-shadow: none !important;
+  z-index: 10;
+}
 /* BUTTON */
 
 .btn-primary{
@@ -199,7 +206,8 @@ box-shadow:0 10px 30px rgba(212,165,165,0.5);
 ============================================ */
 
 .section-padding{
-padding:80px 0;
+padding:80px 5%;
+background: transparent;
 }
 
 .section-title{
@@ -1430,3 +1438,122 @@ p {
   height: 600px;
 
 }
+
+/* ================= HERO TREATMENT ================= */
+.hero-treatment {
+  padding-top: 120px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: linear-gradient(to bottom, #f7f3f0, #ffffff);
+}
+
+.hero-treatment h1 {
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.hero-treatment p {
+  color: #777;
+}
+
+/* ================= SECTION TREATMENT ================= */
+#treatment {
+  background: #fff;
+  padding-top: 40px;
+}
+
+/* JUDUL */
+.section-title {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d8a7a0;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* SEARCH */
+#searchTreatment {
+  width: 50%;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* GRID */
+.grid-treatment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* CARD */
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #777;
+}
+
+.price {
+  display: inline-block;
+  margin-top: 10px;
+  color: #d8a7a0;
+  font-weight: bold;
+}
+
+/* Navbar treatment */
+body.treatment-page header {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+body {
+  background: #fdf7f4;
+}
+.section-padding {
+  background: #fdf7f4;
+}
+.section-padding {
+  background: #fdf7f4;
+  box-shadow: inset 0 10px 40px rgba(0,0,0,0.03);
+}
+background: linear-gradient(to bottom, #f6f1ed, #ffffff);
+
