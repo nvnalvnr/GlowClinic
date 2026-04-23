@@ -1,46 +1,203 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Clinic - Konsultasi Dokter</title>
-    <!-- Font Awesome untuk Ikon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- CSS Utama -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- FONT AESTETIC -->
-     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Clinic - Konsultasi Dokter</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-    <!-- 1. CONTAINER NAVBAR -->
-    <div id="navbar-container"></div>
+<div id="navbar-container"></div>
 
-    <!-- 2. HERO SECTION UNTUK KONTAK -->
-    <section class="hero" style="height: 50vh;">
-        <div class="hero-content">
-            <h1><i class="fas fa-user-md"></i> Konsultasi Dokter</h1>
-            <p>Hubungi dokter kami untuk konsultasi kulit gratis.</p>
-            <a href="#bookingForm" class="btn-primary">
-                <i class="fas fa-calendar-check"></i> Buat Janji Temu
-            </a>
+<!-- HERO -->
+<section class="hero-page">
+  <div class="container">
+    <h1><i class="fas fa-user-md"></i> Konsultasi Dokter</h1>
+    <p>Dapatkan saran terbaik dari dokter profesional kami</p>
+  </div>
+</section>
+
+<!-- DOKTER -->
+<section class="section-padding bg-light">
+      <div class="container">
+        <h2 class="section-title">Dokter Terpercaya</h2>
+
+        <!-- SLIDER -->
+        <div class="doctor-slider" id="doctorSlider">
+          <!-- CARD -->
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600"
+            />
+            <h3>Dr. Sarah Wijaya</h3>
+            <p>Dermatologist - Spesialis kulit</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=600"
+            />
+            <h3>Dr. Andi Pratama</h3>
+            <p>Skin Specialist</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=600"
+            />
+            <h3>Dr. Maya Putri</h3>
+            <p>Dermatologist</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?w=600"
+            />
+            <h3>Dr. Kevin Hartono</h3>
+            <p>Skin Care Expert</p>
+          </div>
+
+          <div class="doctor-card">
+            <img
+              src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=600"
+            />
+            <h3>Dr. Lina Sari</h3>
+            <p>Dermatology Specialist</p>
+          </div>
         </div>
+
+        <!-- BUTTON DI BAWAH -->
+        <div class="slider-controls">
+          <button id="prevBtn"><i class="fas fa-arrow-left"></i></button>
+          <button id="nextBtn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
     </section>
 
-    <!-- 3. SECTION KONTAK INFO -->
-    <section class="section-padding">
-        <div class="container">
-            <h2 class="section-title">Dokter kita</h2>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Alamat Klinik</h3>
-                    <p>Jl. Kecantikan No. 12 </p>
-                </div>
-            </div>
+<!-- FORM BOOKING -->
+<section class="section-padding">
+  <div class="container">
+    <h2 class="section-title">Buat Janji Konsultasi</h2>
+
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <label>Nama Lengkap</label>
+          <input type="text" placeholder="Masukkan nama">
         </div>
-    </section>
-    <script src="/js/navbar.js"></script>
-    <script src="js/footer.js"></script>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" placeholder="Masukkan email">
+        </div>
+
+        <div class="form-group">
+          <label>Pilih Dokter</label>
+          <select>
+            <option>Dr. Sarah Wijaya</option>
+            <option>Dr. Kevin Wijaya</option>
+            <option>Dr. Sinta Lestari</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Tanggal</label>
+          <input type="date">
+        </div>
+
+        <div class="form-group">
+          <label>Keluhan</label>
+          <textarea rows="4" placeholder="Ceritakan masalah kulit anda"></textarea>
+        </div>
+
+        <button type="button" class="btn-primary" onclick="kirimWA()">
+        Kirim ke WhatsApp
+        </button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER (PAKAI HTML LANGSUNG, JANGAN JS) -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- KIRI -->
+    <div class="footer-col">
+      <h2 class="logo">Glow Clinic</h2>
+      <p class="tagline">Healthy Skin, Happy Life ✨</p>
+
+      <div class="footer-info">
+        <p><i class="fas fa-map-marker-alt"></i> Bekasi, Indonesia</p>
+        <p><i class="fas fa-envelope"></i> glowclinic@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+      </div>
+    </div>
+
+    <!-- TENGAH -->
+    <div class="footer-col">
+      <h3>Menu</h3>
+
+      <div class="footer-menu">
+        <a href="index.html">Beranda</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="produk.html">Produk</a>
+        <a href="profil.html">Profil</a>
+        <a href="konsultasi.html">Konsultasi</a>
+      </div>
+    </div>
+
+    <!-- KANAN -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BAWAH -->
+  <div class="footer-bottom">
+    © 2026 Glow Clinic. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="/js/navbar.js"></script>
+<script>
+function kirimWA() {
+  // Ambil data form
+  var nama = document.querySelector('input[type="text"]').value;
+  var email = document.querySelector('input[type="email"]').value;
+  var dokter = document.querySelector('select').value;
+  var tanggal = document.querySelector('input[type="date"]').value;
+  var keluhan = document.querySelector('textarea').value;
+
+  // Nomor WA kamu (WAJIB ganti)
+  var noWA = "6281315099780";
+
+  // Format pesan
+  var pesan = `Halo Glow Clinic,%0A%0A
+Nama: ${nama}%0A
+Email: ${email}%0A
+Dokter: ${dokter}%0A
+Tanggal: ${tanggal}%0A
+Keluhan: ${keluhan}%0A%0A
+Saya ingin konsultasi.`;
+
+  // Buka WhatsApp
+  window.open(`https://wa.me/${noWA}?text=${pesan}`, '_blank');
+}
+</script>
 </body>
 </html>
