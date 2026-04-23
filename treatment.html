@@ -22,13 +22,10 @@
     <div id="navbar-container"></div>
 
     <!-- 2. HERO SECTION UNTUK TREATMENT -->
-    <section class="hero" style="height: 50vh">
-      <div class="hero-content">
-        <h1><i class="fas fa-spa"></i> Treatment Kami</h1>
+    <section class="hero-page">
+      <div class="container">
+        <h1>Treatment Kami</h1>
         <p>Perawatan kulit profesional untuk hasil maksimal.</p>
-        <a href="contact.html" class="btn-primary">
-          <i class="fas fa-user-md"></i> Konsultasi Dokter
-        </a>
       </div>
     </section>
 
@@ -37,20 +34,14 @@
       <div class="container">
         <h2 class="section-title">Semua Treatment Kami</h2>
         <!-- SEARCH -->
-<div style="text-align:center; margin-bottom:30px;">
-  <input 
-    type="text" 
-    id="searchTreatment" 
-    placeholder="Cari treatment..." 
-    style="
-      width: 60%;
-      padding: 12px 20px;
-      border-radius: 30px;
-      border: 1px solid #ddd;
-      outline: none;
-    "
-  >
-</div>
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input
+              type="text"
+              id="searchTreatment"
+              placeholder="Cari treatment..."
+            />
+          </div>
 
         <div class="grid-treatment">
           <!-- SEMUA TREATMENT WITH KATEGORI -->
@@ -222,29 +213,74 @@
     </section>
 
     <!-- 4. FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
 
+    <!-- KIRI -->
+    <div class="footer-col">
+      <h2 class="logo">Glow Clinic</h2>
+      <p class="tagline">Healthy Skin, Happy Life ✨</p>
+
+      <div class="footer-info">
+        <p><i class="fas fa-map-marker-alt"></i> Bekasi, Indonesia</p>
+        <p><i class="fas fa-envelope"></i> glowclinic@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+      </div>
+    </div>
+
+    <!-- TENGAH -->
+    <div class="footer-col">
+      <h3>Menu</h3>
+
+      <div class="footer-menu">
+        <a href="index.html">Beranda</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="produk.html">Produk</a>
+        <a href="profil.html">Profil</a>
+        <a href="konsultasi.html">Konsultasi</a>
+      </div>
+    </div>
+
+    <!-- KANAN -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BAWAH -->
+  <div class="footer-bottom">
+    © 2026 Glow Clinic. All Rights Reserved.
+  </div>
+</footer>
     <!-- JavaScript -->
     <script src="/js/navbar.js"></script>
     <script src="/js/filter-treatment.js"></script>
     <script src="js/footer.js"></script>
   </body>
   <script>
-const searchTreatment = document.getElementById("searchTreatment");
-const treatmentCards = document.querySelectorAll(".grid-treatment .card");
+    const searchTreatment = document.getElementById("searchTreatment");
+    const treatmentCards = document.querySelectorAll(".grid-treatment .card");
 
-searchTreatment.addEventListener("keyup", function () {
-  const keyword = this.value.toLowerCase();
+    searchTreatment.addEventListener("keyup", function () {
+      const keyword = this.value.toLowerCase();
 
-  treatmentCards.forEach(card => {
-    const text = card.innerText.toLowerCase();
+      treatmentCards.forEach((card) => {
+        const text = card.innerText.toLowerCase();
 
-    if (text.includes(keyword)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
-});
-</script>
-
+        if (text.includes(keyword)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
 </html>

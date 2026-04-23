@@ -17,18 +17,15 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="page-produk">
     <!-- 1. CONTAINER NAVBAR -->
     <div id="navbar-container"></div>
 
     <!-- 2. HERO SECTION UNTUK PRODUK -->
-    <section class="hero" style="height: 50vh">
-      <div class="hero-content">
-        <h1><i class="fas fa-shopping-bag"></i> Produk Skincare</h1>
-        <p>Produk berkualitas untuk perawatan kulit sehari-hari.</p>
-        <a href="contact.html" class="btn-primary">
-          <i class="fas fa-comments"></i> Tanya Produk
-        </a>
+    <section class="hero-page">
+      <div class="container">
+        <h1>Produk Kami</h1>
+        <p>Skincare berkualitas untuk kulit sehat dan bercahaya.</p>
       </div>
     </section>
 
@@ -41,21 +38,15 @@
         </div>
 
         <h2 class="section-title">Semua Produk Kami</h2>
-        <!-- SEARCH -->
-<div style="text-align:center; margin-bottom:30px;">
-  <input 
-    type="text" 
-    id="searchProduk" 
-    placeholder="Cari produk..." 
-    style="
-      width: 60%;
-      padding: 12px 20px;
-      border-radius: 30px;
-      border: 1px solid #ddd;
-      outline: none;
-    "
-  >
-</div>
+    <!-- SEARCH -->
+         <div class="search-box">
+          <i class="fas fa-search"></i>
+          <input
+            type="text"
+            id="searchProduct"
+            placeholder="Cari produk..."
+          />
+        </div>
 
         <div class="grid-produk">
           <!-- Produk 1 -->
@@ -138,19 +129,65 @@
     </section>
 
     <!-- 4. FOOTER -->
+    <footer class="footer">
+  <div class="footer-container">
 
+    <!-- KIRI -->
+    <div class="footer-col">
+      <h2 class="logo">Glow Clinic</h2>
+      <p class="tagline">Healthy Skin, Happy Life ✨</p>
+
+      <div class="footer-info">
+        <p><i class="fas fa-map-marker-alt"></i> Bekasi, Indonesia</p>
+        <p><i class="fas fa-envelope"></i> glowclinic@gmail.com</p>
+        <p><i class="fas fa-phone"></i> 0812-3456-7890</p>
+      </div>
+    </div>
+
+    <!-- TENGAH -->
+    <div class="footer-col">
+      <h3>Menu</h3>
+
+      <div class="footer-menu">
+        <a href="index.html">Beranda</a>
+        <a href="treatment.html">Treatment</a>
+        <a href="produk.html">Produk</a>
+        <a href="profil.html">Profil</a>
+        <a href="konsultasi.html">Konsultasi</a>
+      </div>
+    </div>
+
+    <!-- KANAN -->
+    <div class="footer-col">
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BAWAH -->
+  <div class="footer-bottom">
+    © 2026 Glow Clinic. All Rights Reserved.
+  </div>
+</footer>
     <!-- JavaScript -->
     <script src="js/navbar.js"></script>
     <script src="js/produk-filtering.js"></script>
     <script src="js/footer.js"></script>
-    <script>
-const searchProduk = document.getElementById("searchProduk");
-const produkCards = document.querySelectorAll(".grid-produk .product-card");
+<script>
+const searchProduct = document.getElementById("searchProduct");
+const productCards = document.querySelectorAll(".grid-produk .product-card");
 
-searchProduk.addEventListener("keyup", function () {
+searchProduct.addEventListener("keyup", function () {
   const keyword = this.value.toLowerCase();
 
-  produkCards.forEach(card => {
+  productCards.forEach((card) => {
     const text = card.innerText.toLowerCase();
 
     if (text.includes(keyword)) {
