@@ -21,34 +21,33 @@
     <!-- 1. CONTAINER NAVBAR -->
     <div id="navbar-container"></div>
 
-  <!-- 2. HERO SECTION UNTUK TREATMENT -->
-  <section class="hero-treatment">
-  <div class="container">
-    <h1>Treatment Kami</h1>
-    <p>Perawatan kulit profesional untuk hasil maksimal.</p>
-  </div>
-  </section>
-
+    <!-- 2. HERO SECTION UNTUK TREATMENT -->
+    <section class="hero-page">
+      <div class="container">
+        <h1>Treatment Kami</h1>
+        <p>Perawatan kulit profesional untuk hasil maksimal.</p>
+      </div>
+    </section>
 
     <!-- 3. SECTION TREATMENT LENGKAP -->
     <section id="treatment" class="section-padding">
       <div class="container">
         <h2 class="section-title">Semua Treatment Kami</h2>
         <!-- SEARCH -->
-<div style="text-align:center; margin-bottom:30px;">
-  <input 
-    type="text" 
-    id="searchTreatment" 
-    placeholder="Cari treatment..." 
-    style="
-      width: 60%;
-      padding: 12px 20px;
-      border-radius: 30px;
-      border: 1px solid #ddd;
-      outline: none;
-    "
-  >
-</div>
+        <div style="text-align: center; margin-bottom: 30px">
+          <input
+            type="text"
+            id="searchTreatment"
+            placeholder="Cari treatment..."
+            style="
+              width: 60%;
+              padding: 12px 20px;
+              border-radius: 30px;
+              border: 1px solid #ddd;
+              outline: none;
+            "
+          />
+        </div>
 
         <div class="grid-treatment">
           <!-- SEMUA TREATMENT WITH KATEGORI -->
@@ -227,22 +226,21 @@
     <script src="js/footer.js"></script>
   </body>
   <script>
-const searchTreatment = document.getElementById("searchTreatment");
-const treatmentCards = document.querySelectorAll(".grid-treatment .card");
+    const searchTreatment = document.getElementById("searchTreatment");
+    const treatmentCards = document.querySelectorAll(".grid-treatment .card");
 
-searchTreatment.addEventListener("keyup", function () {
-  const keyword = this.value.toLowerCase();
+    searchTreatment.addEventListener("keyup", function () {
+      const keyword = this.value.toLowerCase();
 
-  treatmentCards.forEach(card => {
-    const text = card.innerText.toLowerCase();
+      treatmentCards.forEach((card) => {
+        const text = card.innerText.toLowerCase();
 
-    if (text.includes(keyword)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
-    }
-  });
-});
-</script>
-
+        if (text.includes(keyword)) {
+          card.style.display = "block";
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  </script>
 </html>
